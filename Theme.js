@@ -1,13 +1,20 @@
 let modeBtn = document.querySelector("#modebtn");
 let currMode = "light";
+let body = document.querySelector("body")
 
-modeBtn.addEventListener("click",()=>{
-    if(currMode.toLowerCase() == "light")
+modeBtn.addEventListener("click",() => {
+    if(currMode === "light")
     {
-         
-        document.querySelector('body').classList.add("dark");
+         currMode = "dark";
+        body.classList.add("dark");
+        body.classList.remove("light")
     }
-    else{
-        document.querySelector('body').classList.add("white")   
+    else
+    {
+        currMode = "light";
+        body.classList.add("light") 
+        body.classList.remove("dark")  
     }
+
+   
 })
