@@ -1,9 +1,16 @@
 .dark{
-    background-color: dark;
+    background-color: black;
     color: white;
 }
-.white
+.light
 {
-    background-color: whtie;
+    background-color: white;
     color: black;
+}
+button{
+    padding: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: 0px;
+    border-radius: 29px;
 }
